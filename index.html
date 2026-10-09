@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XUMB Studio — Diseño y animación 2D/3D, motion design y arte digital</title>
+<meta name="description" content="XUMB es un estudio indie de diseño y animación 2D/3D, motion design y arte digital para publicidad, música, cine, moda y TV.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xumb.studio">
+<meta property="og:title" content="XUMB Studio">
+<meta property="og:description" content="Estudio indie de diseño y animación 2D/3D, motion design y arte digital.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%22-60%20-40%20623%20619%22%3E%3Crect%20x=%22-60%22%20y=%22-40%22%20width=%22623%22%20height=%22619%22%20fill=%22%23000%22/%3E%3Cg%20fill=%22%23E9AD35%22%3E%3Cpath%20d=%22M31.8%20537.4C10.8%20533.4%20-2.4%20514.7%200.9%20494.0C3.6%20477.1%2014.9%20463.9%2051.0%20435.0C82.8%20409.6%2092.7%20398.6%2094.9%20386.3C98.0%20368.8%2090.7%20359.0%2053.5%20331.0C21.5%20307.0%2013.0%20295.0%2013.6%20275.3C14.3%20256.7%2022.7%20246.1%2060.0%20216.7C94.4%20189.5%20102.4%20179.8%20101.9%20165.2C101.4%20149.2%2092.5%20137.8%2056.5%20106.7C31.4%2085.0%2016.2%2070.1%2010.7%2061.7C-5.1%2037.9%203.3%2011.9%2029.3%203.5C39.1%200.4%2044.3%200.4%2054.6%203.5C68.6%207.8%2075.5%2014.1%2091.5%2037.5C114.2%2070.8%20129.6%2087.0%20161.2%20111.2C185.6%20129.7%20192.5%20138.6%20195.8%20155.2C197.2%20162.4%20197.2%20163.7%20195.7%20170.8C191.4%20190.9%20183.5%20199.4%20144.5%20226.6C88.7%20265.4%2088.8%20280.7%20145.0%20324.0C178.5%20349.8%20188.6%20362.2%20189.4%20378.5C190.3%20396.9%20185.0%20406.0%20163.0%20424.0C138.2%20444.4%20123.8%20459.9%2097.8%20494.5C81.1%20516.7%2069.6%20529.1%2062.3%20532.9C52.9%20537.6%2041.5%20539.3%2031.8%20537.4Z%22/%3E%3Cpath%20d=%22M450.3%20537.6C435.7%20533.9%20427.3%20526.2%20410.4%20501.0C389.7%20470.0%20372.5%20451.9%20341.4%20428.3C313.6%20407.3%20306.6%20397.0%20306.6%20377.0C306.5%20353.7%20315.5%20343.0%20362.9%20310.0C413.9%20274.5%20412.9%20258.0%20357.4%20215.2C323.3%20189.0%20314.4%20177.8%20313.5%20160.5C312.7%20143.6%20318.8%20133.1%20339.0%20116.7C363.9%2096.6%20382.9%2075.7%20410.9%2037.4C423.3%2020.5%20434.7%209.0%20442.9%205.1C477.2%20-11.1%20511.7%2015.9%20501.2%2050.7C496.4%2066.5%20485.8%2078.0%20449.5%20107.0C417.2%20132.8%20408.6%20143.7%20408.6%20159.0C408.5%20173.6%20416.5%20183.2%20449.5%20207.9C474.8%20226.9%20487.7%20240.1%20488.5%20247.8C488.6%20248.8%20489.3%20250.9%20490.0%20252.5C490.7%20254.4%20491.0%20258.7%20490.8%20264.2C490.0%20280.5%20480.1%20294.3%20454.0%20315.0C425.2%20337.9%20419.6%20342.7%20414.1%20348.7C399.9%20364.1%20398.4%20378.4%20409.1%20395.0C414.1%20402.9%20429.5%20418.2%20449.0%20435.0C480.7%20462.2%20495.4%20478.6%20499.4%20491.4C508.1%20519.1%20480.3%20545.2%20450.3%20537.6Z%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000;
+    --white: #fff;
+    --mute: #9a9a9a;
+    --line: rgba(255,255,255,.18);
+    /* amarillo actual del isotipo; con click en el isotipo rota por la paleta semifluorescente */
+    --accent: #E9AD35;
+    --font: "Montserrat", "Gotham", "Gilroy", "Helvetica Neue", Arial, sans-serif;
+    --pad: clamp(20px, 5vw, 72px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; }
+
+  html { background: var(--black); color: var(--white); -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 1.55;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--accent); color: var(--black); }
+
+  /* textura sutil */
+  body::after {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.2 0 0 0 -.35'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: .05;
+    z-index: 5;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 6px;
+    border-radius: 2px;
+  }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+  /* ================= CABECERA / LOGO COMPUESTO ================= */
+  .hero {
+    position: relative;
+    min-height: 82vh;
+    min-height: 82svh;
+    display: grid;
+    place-items: center;
+    padding: calc(var(--pad) * 1.3) var(--pad) var(--pad);
+    overflow: hidden;
+    overflow: clip;
+  }
+  .lockup {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(22px, 4.6vmin, 46px);
+  }
+
+  /* isotipo */
+  .stage {
+    position: relative;
+    width: clamp(150px, 30vmin, 300px);
+    aspect-ratio: 503 / 539;
+    padding: 0; border: 0; background: none;
+    color: var(--accent);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .iso {
+    position: relative;
+    width: 100%; height: 100%;
+    display: block;
+    overflow: visible;
+    transform: translate(calc(var(--nx, 0) * 12px), calc(var(--ny, 0) * 12px)) rotate(calc(var(--nx, 0) * 3deg));
+    transition: transform .7s cubic-bezier(.2,.8,.2,1);
+  }
+  .iso path { fill: var(--accent); transition: fill .5s ease; }
+
+  .half { transform-box: fill-box; transform-origin: 50% 50%; }
+  .half.l { animation: introL 1.3s cubic-bezier(.2,.9,.2,1) backwards, swayL 5.5s ease-in-out 1.3s infinite alternate; }
+  .half.r { animation: introR 1.3s cubic-bezier(.2,.9,.2,1) backwards, swayR 5.5s ease-in-out 1.3s infinite alternate; }
+  @keyframes introL { from { translate: -38% 0; opacity: 0; } to { translate: 0 0; opacity: 1; } }
+  @keyframes introR { from { translate: 38% 0; opacity: 0; } to { translate: 0 0; opacity: 1; } }
+  @keyframes swayL { from { transform: translateX(-9px); } to { transform: translateX(7px); } }
+  @keyframes swayR { from { transform: translateX(9px); } to { transform: translateX(-7px); } }
+
+  /* "buzzz": vibración corta al pasar el cursor o hacer click */
+  .stage.buzz .half.l path { animation: buzzL .085s linear 6; }
+  .stage.buzz .half.r path { animation: buzzR .085s linear 6; }
+  @keyframes buzzL {
+    0% { transform: translate(0,0); } 25% { transform: translate(-9px, 5px); }
+    50% { transform: translate(7px,-5px); } 75% { transform: translate(-7px, 3px); } 100% { transform: translate(0,0); }
+  }
+  @keyframes buzzR {
+    0% { transform: translate(0,0); } 25% { transform: translate(9px,-5px); }
+    50% { transform: translate(-7px, 5px); } 75% { transform: translate(7px,-3px); } 100% { transform: translate(0,0); }
+  }
+
+  /* ondas: anillos con lóbulos, como ondas sonoras que tocan el agua y arman formas tipo mandala */
+  .waves {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: clamp(560px, 105vmin, 1200px);
+    aspect-ratio: 1;
+    translate: -50% -50%;
+    pointer-events: none;
+    overflow: visible;
+  }
+  .waves path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+    transition: stroke .5s ease;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    opacity: 0;
+    animation: ripple 8.5s cubic-bezier(.25,.5,.3,1) calc(1.1s + var(--i) * 2.1s) infinite backwards;
+  }
+  @keyframes ripple {
+    0%   { transform: scale(.12) rotate(0deg); opacity: 0; }
+    9%   { opacity: .75; }
+    100% { transform: scale(1) rotate(var(--rot)); opacity: 0; }
+  }
+
+  /* logotipo */
+  .word { line-height: 0; }
+  .word svg { width: clamp(250px, 46vw, 560px); height: auto; display: block; overflow: visible; }
+  .word path {
+    fill: var(--white);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    cursor: default;
+    transition: fill .3s ease, translate .55s cubic-bezier(.34,1.56,.64,1), scale .55s cubic-bezier(.34,1.56,.64,1);
+    animation: rise 1.1s cubic-bezier(.2,.9,.2,1) calc(.55s + var(--i) * .08s) backwards;
+  }
+  .word path:hover { fill: var(--accent); translate: 0 -7px; scale: 1.03 1.07; }
+  @keyframes rise {
+    from { transform: translateY(28px) scaleY(.82); opacity: 0; }
+    to   { transform: none; opacity: 1; }
+  }
+
+  .studio {
+    font-weight: 300;
+    font-size: clamp(.75rem, 1.5vw, 1rem);
+    letter-spacing: .72em;
+    text-indent: .72em;
+    margin-top: calc(clamp(22px, 4.6vmin, 46px) * -.35);
+    animation: fadeIn 1.2s ease 1.3s backwards;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* ================= CONTENIDO ================= */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 var(--pad); }
+  .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; }
+
+  .about { padding-block: clamp(56px, 9vw, 128px) clamp(40px, 6vw, 88px); }
+  .lead {
+    grid-column: 1 / -1;
+    max-width: 22em;
+    font-weight: 300;
+    font-size: clamp(1.75rem, 4.1vw, 3.5rem);
+    line-height: 1.16;
+    letter-spacing: -.015em;
+    text-wrap: balance;
+  }
+  .about p.body {
+    grid-column: 4 / span 6;
+    margin-top: clamp(28px, 4vw, 56px);
+    max-width: 58ch;
+    color: var(--mute);
+    font-size: clamp(1rem, 1.35vw, 1.125rem);
+    line-height: 1.7;
+  }
+
+  .row {
+    border-top: 1px solid var(--line);
+    padding: clamp(28px, 4vw, 48px) 0;
+  }
+  .row > .label {
+    grid-column: 1 / span 3;
+    color: var(--mute);
+    font-size: .95rem;
+    font-weight: 500;
+    padding-top: .55em;
+  }
+  .row > .content { grid-column: 4 / -1; }
+
+  /* trabajos */
+  .works { list-style: none; padding: 0; }
+  .works li + li { border-top: 1px solid var(--line); }
+  .works a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 6px 24px;
+    padding: 22px 0;
+    transition: color .3s ease;
+  }
+  .works li:first-child a { padding-top: 0; }
+  .works li:last-child a { padding-bottom: 0; }
+  .works .name { font-weight: 800; font-size: clamp(1.5rem, 3.2vw, 2.4rem); letter-spacing: -.02em; line-height: 1.15; }
+  .works .desc { grid-column: 1; color: var(--mute); font-size: 1rem; max-width: 46ch; }
+  .works .where { grid-column: 2; grid-row: 1; color: var(--mute); font-size: .9rem; }
+  .works a:hover .name { color: var(--accent); }
+
+  /* contacto */
+  .contact-item + .contact-item { margin-top: clamp(24px, 3.4vw, 40px); }
+  .contact-item small { display: block; color: var(--mute); font-size: .9rem; margin-bottom: 4px; }
+  .big {
+    display: inline;
+    font-weight: 800;
+    font-size: clamp(1.25rem, 4.6vw, 3rem);
+    letter-spacing: -.025em;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 100% / 0% .09em;
+    transition: background-size .45s cubic-bezier(.2,.8,.2,1), color .3s ease;
+  }
+  .big:hover, .big:focus-visible { color: var(--accent); background-size: 100% .09em; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 28px 0 calc(28px + env(safe-area-inset-bottom));
+    color: var(--mute);
+    font-size: .85rem;
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 860px) {
+    .about p.body { grid-column: 1 / -1; }
+    .row > .label { grid-column: 1 / -1; padding-top: 0; margin-bottom: 18px; }
+    .row > .content { grid-column: 1 / -1; }
+    .works a { grid-template-columns: 1fr; }
+    .works .desc { grid-row: 2; }
+    .works .where { grid-column: 1; grid-row: 3; margin-top: 4px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .waves path:nth-child(2) { opacity: .22; transform: scale(.5); }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="lockup">
+    <button class="stage" type="button" aria-label="Cambiar color de acento">
+      <svg class="waves" viewBox="-110 -110 220 220" aria-hidden="true" focusable="false"><path style="--i:0;--rot:26deg" d="M106.90 0.00L106.62 2.79L105.82 5.55L104.56 8.23L102.97 10.82L101.18 13.32L99.33 15.73L97.54 18.08L95.91 20.39L94.48 22.68L93.26 24.99L92.21 27.31L91.29 29.66L90.41 32.02L89.53 34.37L88.60 36.70L87.61 39.01L86.57 41.29L85.52 43.58L84.52 45.89L83.61 48.27L82.85 50.77L82.24 53.40L81.76 56.19L81.36 59.11L80.96 62.12L80.46 65.16L79.75 68.12L78.74 70.90L77.37 73.42L75.59 75.59L73.42 77.37L70.90 78.74L68.12 79.75L65.16 80.46L62.12 80.96L59.11 81.36L56.19 81.76L53.40 82.24L50.77 82.85L48.28 83.61L45.89 84.52L43.58 85.52L41.29 86.57L39.01 87.61L36.70 88.60L34.37 89.53L32.02 90.41L29.66 91.29L27.31 92.21L24.99 93.26L22.68 94.48L20.39 95.91L18.08 97.54L15.73 99.33L13.32 101.18L10.82 102.97L8.23 104.56L5.55 105.82L2.79 106.62L0.00 106.90L-2.79 106.62L-5.55 105.82L-8.23 104.56L-10.82 102.97L-13.32 101.18L-15.73 99.33L-18.08 97.54L-20.39 95.91L-22.68 94.48L-24.99 93.26L-27.31 92.21L-29.66 91.29L-32.02 90.41L-34.37 89.53L-36.70 88.60L-39.01 87.61L-41.29 86.57L-43.58 85.52L-45.89 84.52L-48.27 83.61L-50.77 82.85L-53.40 82.24L-56.19 81.76L-59.11 81.36L-62.12 80.96L-65.16 80.46L-68.12 79.75L-70.90 78.74L-73.42 77.37L-75.59 75.59L-77.37 73.42L-78.74 70.90L-79.75 68.12L-80.46 65.16L-80.96 62.12L-81.36 59.11L-81.76 56.19L-82.24 53.40L-82.85 50.77L-83.61 48.27L-84.52 45.89L-85.52 43.58L-86.57 41.29L-87.61 39.01L-88.60 36.70L-89.53 34.37L-90.41 32.02L-91.29 29.66L-92.21 27.31L-93.26 24.99L-94.48 22.68L-95.91 20.39L-97.54 18.08L-99.33 15.73L-101.18 13.32L-102.97 10.82L-104.56 8.23L-105.82 5.55L-106.62 2.79L-106.90 0.00L-106.62 -2.79L-105.82 -5.55L-104.56 -8.23L-102.97 -10.82L-101.18 -13.32L-99.33 -15.73L-97.54 -18.08L-95.91 -20.39L-94.48 -22.68L-93.26 -24.99L-92.21 -27.31L-91.29 -29.66L-90.41 -32.02L-89.53 -34.37L-88.60 -36.70L-87.61 -39.01L-86.57 -41.29L-85.52 -43.58L-84.52 -45.89L-83.61 -48.27L-82.85 -50.77L-82.24 -53.40L-81.76 -56.19L-81.36 -59.11L-80.96 -62.12L-80.46 -65.16L-79.75 -68.12L-78.74 -70.90L-77.37 -73.42L-75.59 -75.59L-73.42 -77.37L-70.90 -78.74L-68.12 -79.75L-65.16 -80.46L-62.12 -80.96L-59.11 -81.36L-56.19 -81.76L-53.40 -82.24L-50.77 -82.85L-48.28 -83.61L-45.89 -84.52L-43.58 -85.52L-41.29 -86.57L-39.01 -87.61L-36.70 -88.60L-34.37 -89.53L-32.02 -90.41L-29.66 -91.29L-27.31 -92.21L-24.99 -93.26L-22.68 -94.48L-20.39 -95.91L-18.08 -97.54L-15.73 -99.33L-13.32 -101.18L-10.82 -102.97L-8.23 -104.56L-5.55 -105.82L-2.79 -106.62L-0.00 -106.90L2.79 -106.62L5.55 -105.82L8.23 -104.56L10.82 -102.97L13.32 -101.18L15.73 -99.33L18.08 -97.54L20.39 -95.91L22.68 -94.48L24.99 -93.26L27.31 -92.21L29.66 -91.29L32.02 -90.41L34.37 -89.53L36.70 -88.60L39.01 -87.61L41.29 -86.57L43.58 -85.52L45.89 -84.52L48.28 -83.61L50.77 -82.85L53.40 -82.24L56.19 -81.76L59.11 -81.36L62.12 -80.96L65.16 -80.46L68.12 -79.75L70.90 -78.74L73.42 -77.37L75.59 -75.59L77.37 -73.42L78.74 -70.90L79.75 -68.12L80.46 -65.16L80.96 -62.12L81.36 -59.11L81.76 -56.19L82.24 -53.40L82.85 -50.77L83.61 -48.27L84.52 -45.89L85.52 -43.58L86.57 -41.29L87.61 -39.01L88.60 -36.70L89.53 -34.37L90.41 -32.02L91.29 -29.66L92.21 -27.31L93.26 -24.99L94.48 -22.68L95.91 -20.39L97.54 -18.08L99.33 -15.73L101.18 -13.32L102.97 -10.82L104.56 -8.23L105.82 -5.55L106.62 -2.79Z"/><path style="--i:1;--rot:-26deg" d="M106.07 0.00L105.00 2.75L103.57 5.43L101.92 8.02L100.20 10.53L98.52 12.97L96.98 15.36L95.64 17.72L94.50 20.09L93.55 22.46L92.73 24.85L91.97 27.24L91.21 29.63L90.40 32.01L89.53 34.37L88.61 36.70L87.67 39.03L86.78 41.39L85.97 43.81L85.31 46.32L84.81 48.96L84.45 51.75L84.19 54.68L83.95 57.70L83.61 60.75L83.08 63.75L82.26 66.61L81.06 69.23L79.44 71.53L77.41 73.46L75.00 75.00L72.30 76.19L69.40 77.07L66.40 77.74L63.40 78.30L60.49 78.83L57.71 79.43L55.09 80.16L52.62 81.03L50.27 82.03L48.00 83.14L45.77 84.29L43.54 85.45L41.29 86.56L39.01 87.61L36.70 88.61L34.39 89.59L32.09 90.63L29.82 91.77L27.57 93.08L25.35 94.59L23.12 96.31L20.87 98.19L18.56 100.16L16.17 102.08L13.67 103.83L11.06 105.27L8.36 106.27L5.59 106.75L2.79 106.68L0.00 106.07L-2.75 105.00L-5.43 103.57L-8.02 101.92L-10.53 100.20L-12.97 98.52L-15.36 96.98L-17.72 95.64L-20.09 94.50L-22.46 93.55L-24.85 92.73L-27.24 91.97L-29.63 91.21L-32.01 90.40L-34.37 89.53L-36.70 88.61L-39.03 87.67L-41.39 86.78L-43.81 85.97L-46.32 85.31L-48.96 84.81L-51.75 84.45L-54.68 84.19L-57.70 83.95L-60.75 83.61L-63.75 83.08L-66.61 82.26L-69.23 81.06L-71.53 79.44L-73.46 77.41L-75.00 75.00L-76.19 72.30L-77.07 69.40L-77.74 66.40L-78.30 63.40L-78.83 60.49L-79.43 57.71L-80.16 55.09L-81.03 52.62L-82.03 50.27L-83.14 48.00L-84.29 45.77L-85.45 43.54L-86.56 41.29L-87.61 39.01L-88.61 36.70L-89.59 34.39L-90.63 32.09L-91.77 29.82L-93.08 27.57L-94.59 25.35L-96.31 23.12L-98.19 20.87L-100.16 18.56L-102.08 16.17L-103.83 13.67L-105.27 11.06L-106.27 8.36L-106.75 5.59L-106.68 2.79L-106.07 0.00L-105.00 -2.75L-103.57 -5.43L-101.92 -8.02L-100.20 -10.53L-98.52 -12.97L-96.98 -15.36L-95.64 -17.72L-94.50 -20.09L-93.55 -22.46L-92.73 -24.85L-91.97 -27.24L-91.21 -29.63L-90.40 -32.01L-89.53 -34.37L-88.61 -36.70L-87.67 -39.03L-86.78 -41.39L-85.97 -43.81L-85.31 -46.32L-84.81 -48.96L-84.45 -51.75L-84.19 -54.68L-83.95 -57.70L-83.61 -60.75L-83.08 -63.75L-82.26 -66.61L-81.06 -69.23L-79.44 -71.53L-77.41 -73.46L-75.00 -75.00L-72.30 -76.19L-69.40 -77.07L-66.40 -77.74L-63.40 -78.30L-60.49 -78.83L-57.71 -79.43L-55.09 -80.16L-52.62 -81.03L-50.27 -82.03L-48.00 -83.14L-45.77 -84.29L-43.54 -85.45L-41.29 -86.56L-39.01 -87.61L-36.70 -88.61L-34.39 -89.59L-32.09 -90.63L-29.82 -91.77L-27.57 -93.08L-25.35 -94.59L-23.12 -96.31L-20.87 -98.19L-18.56 -100.16L-16.17 -102.08L-13.67 -103.83L-11.06 -105.27L-8.36 -106.27L-5.59 -106.75L-2.79 -106.68L-0.00 -106.07L2.75 -105.00L5.43 -103.57L8.02 -101.92L10.53 -100.20L12.97 -98.52L15.36 -96.98L17.72 -95.64L20.09 -94.50L22.46 -93.55L24.85 -92.73L27.24 -91.97L29.63 -91.21L32.01 -90.40L34.37 -89.53L36.70 -88.61L39.03 -87.67L41.39 -86.78L43.81 -85.97L46.32 -85.31L48.96 -84.81L51.75 -84.45L54.68 -84.19L57.70 -83.95L60.75 -83.61L63.75 -83.08L66.61 -82.26L69.23 -81.06L71.53 -79.44L73.46 -77.41L75.00 -75.00L76.19 -72.30L77.07 -69.40L77.74 -66.40L78.30 -63.40L78.83 -60.49L79.43 -57.71L80.16 -55.09L81.03 -52.62L82.03 -50.27L83.14 -48.00L84.29 -45.77L85.45 -43.54L86.56 -41.29L87.61 -39.01L88.61 -36.70L89.59 -34.39L90.63 -32.09L91.77 -29.82L93.08 -27.57L94.59 -25.35L96.31 -23.12L98.19 -20.87L100.16 -18.56L102.08 -16.17L103.83 -13.67L105.27 -11.06L106.27 -8.36L106.75 -5.59L106.68 -2.79Z"/><path style="--i:2;--rot:26deg" d="M103.89 0.00L102.39 2.68L100.79 5.28L99.22 7.81L97.78 10.28L96.53 12.71L95.49 15.12L94.64 17.54L93.92 19.96L93.27 22.39L92.63 24.82L91.95 27.24L91.21 29.63L90.40 32.01L89.58 34.39L88.79 36.78L88.10 39.22L87.54 41.75L87.15 44.40L86.91 47.19L86.79 50.11L86.69 53.12L86.53 56.19L86.18 59.23L85.53 62.14L84.51 64.85L83.07 67.26L81.18 69.34L78.90 71.05L76.30 72.40L73.46 73.46L70.51 74.30L67.54 75.01L64.64 75.68L61.87 76.41L59.27 77.24L56.83 78.22L54.52 79.32L52.29 80.53L50.12 81.79L47.95 83.05L45.76 84.28L43.54 85.45L41.29 86.56L39.03 87.66L36.78 88.79L34.56 90.03L32.38 91.43L30.22 93.02L28.09 94.82L25.94 96.80L23.74 98.86L21.45 100.92L19.06 102.81L16.54 104.42L13.90 105.61L11.17 106.30L8.38 106.43L5.56 106.03L2.75 105.15L0.00 103.89L-2.68 102.39L-5.28 100.79L-7.81 99.22L-10.28 97.78L-12.71 96.53L-15.12 95.49L-17.54 94.64L-19.96 93.92L-22.39 93.27L-24.82 92.63L-27.24 91.95L-29.63 91.21L-32.01 90.40L-34.39 89.58L-36.78 88.79L-39.22 88.10L-41.75 87.54L-44.40 87.15L-47.19 86.91L-50.11 86.79L-53.12 86.69L-56.19 86.53L-59.23 86.18L-62.14 85.53L-64.85 84.51L-67.26 83.07L-69.34 81.18L-71.05 78.90L-72.40 76.30L-73.46 73.46L-74.30 70.51L-75.01 67.54L-75.68 64.64L-76.41 61.87L-77.24 59.27L-78.22 56.83L-79.32 54.52L-80.53 52.29L-81.79 50.12L-83.05 47.95L-84.28 45.76L-85.45 43.54L-86.56 41.29L-87.66 39.03L-88.79 36.78L-90.03 34.56L-91.43 32.38L-93.02 30.22L-94.82 28.09L-96.80 25.94L-98.86 23.74L-100.92 21.45L-102.81 19.06L-104.42 16.54L-105.61 13.90L-106.30 11.17L-106.43 8.38L-106.03 5.56L-105.15 2.75L-103.89 0.00L-102.39 -2.68L-100.79 -5.28L-99.22 -7.81L-97.78 -10.28L-96.53 -12.71L-95.49 -15.12L-94.64 -17.54L-93.92 -19.96L-93.27 -22.39L-92.63 -24.82L-91.95 -27.24L-91.21 -29.63L-90.40 -32.01L-89.58 -34.39L-88.79 -36.78L-88.10 -39.22L-87.54 -41.75L-87.15 -44.40L-86.91 -47.19L-86.79 -50.11L-86.69 -53.12L-86.53 -56.19L-86.18 -59.23L-85.53 -62.14L-84.51 -64.85L-83.07 -67.26L-81.18 -69.34L-78.90 -71.05L-76.30 -72.40L-73.46 -73.46L-70.51 -74.30L-67.54 -75.01L-64.64 -75.68L-61.87 -76.41L-59.27 -77.24L-56.83 -78.22L-54.52 -79.32L-52.29 -80.53L-50.12 -81.79L-47.95 -83.05L-45.76 -84.28L-43.54 -85.45L-41.29 -86.56L-39.03 -87.66L-36.78 -88.79L-34.56 -90.03L-32.38 -91.43L-30.22 -93.02L-28.09 -94.82L-25.94 -96.80L-23.74 -98.86L-21.45 -100.92L-19.06 -102.81L-16.54 -104.42L-13.90 -105.61L-11.17 -106.30L-8.38 -106.43L-5.56 -106.03L-2.75 -105.15L-0.00 -103.89L2.68 -102.39L5.28 -100.79L7.81 -99.22L10.28 -97.78L12.71 -96.53L15.12 -95.49L17.54 -94.64L19.96 -93.92L22.39 -93.27L24.82 -92.63L27.24 -91.95L29.63 -91.21L32.01 -90.40L34.39 -89.58L36.78 -88.79L39.22 -88.10L41.75 -87.54L44.40 -87.15L47.19 -86.91L50.11 -86.79L53.12 -86.69L56.19 -86.53L59.23 -86.18L62.14 -85.53L64.85 -84.51L67.26 -83.07L69.34 -81.18L71.05 -78.90L72.40 -76.30L73.46 -73.46L74.30 -70.51L75.01 -67.54L75.68 -64.64L76.41 -61.87L77.24 -59.27L78.22 -56.83L79.32 -54.52L80.53 -52.29L81.79 -50.12L83.05 -47.95L84.28 -45.76L85.45 -43.54L86.56 -41.29L87.66 -39.03L88.79 -36.78L90.03 -34.56L91.43 -32.38L93.02 -30.22L94.82 -28.09L96.80 -25.94L98.86 -23.74L100.92 -21.45L102.81 -19.06L104.42 -16.54L105.61 -13.90L106.30 -11.17L106.43 -8.38L106.03 -5.56L105.15 -2.75Z"/><path style="--i:3;--rot:-26deg" d="M101.11 0.00L99.66 2.61L98.32 5.15L97.17 7.65L96.22 10.11L95.47 12.57L94.85 15.02L94.32 17.48L93.80 19.94L93.25 22.39L92.63 24.82L91.95 27.24L91.25 29.65L90.57 32.07L89.98 34.54L89.53 37.08L89.24 39.73L89.13 42.51L89.13 45.42L89.19 48.43L89.19 51.49L89.02 54.55L88.56 57.51L87.73 60.29L86.46 62.81L84.73 65.02L82.59 66.88L80.09 68.40L77.33 69.63L74.43 70.63L71.50 71.50L68.63 72.32L65.88 73.17L63.30 74.12L60.89 75.19L58.62 76.39L56.45 77.70L54.33 79.06L52.23 80.43L50.11 81.77L47.95 83.05L45.76 84.28L43.56 85.49L41.37 86.72L39.20 88.05L37.08 89.53L35.01 91.20L32.96 93.08L30.91 95.14L28.82 97.31L26.65 99.48L24.37 101.52L21.95 103.29L19.40 104.67L16.72 105.55L13.94 105.89L11.11 105.69L8.26 105.00L5.45 103.92L2.69 102.58L0.00 101.11L-2.61 99.66L-5.15 98.32L-7.65 97.17L-10.11 96.22L-12.57 95.47L-15.02 94.85L-17.48 94.32L-19.94 93.80L-22.39 93.25L-24.82 92.63L-27.24 91.95L-29.65 91.25L-32.07 90.57L-34.54 89.98L-37.08 89.53L-39.73 89.24L-42.51 89.13L-45.42 89.13L-48.43 89.19L-51.49 89.19L-54.55 89.02L-57.51 88.56L-60.29 87.73L-62.81 86.46L-65.02 84.73L-66.88 82.59L-68.40 80.09L-69.63 77.33L-70.63 74.43L-71.50 71.50L-72.32 68.63L-73.17 65.88L-74.12 63.30L-75.19 60.89L-76.39 58.62L-77.70 56.45L-79.06 54.33L-80.43 52.23L-81.77 50.11L-83.05 47.95L-84.28 45.76L-85.49 43.56L-86.72 41.37L-88.05 39.20L-89.53 37.08L-91.20 35.01L-93.08 32.96L-95.14 30.91L-97.31 28.82L-99.48 26.65L-101.52 24.37L-103.29 21.95L-104.67 19.40L-105.55 16.72L-105.89 13.94L-105.69 11.11L-105.00 8.26L-103.92 5.45L-102.58 2.69L-101.11 0.00L-99.66 -2.61L-98.32 -5.15L-97.17 -7.65L-96.22 -10.11L-95.47 -12.57L-94.85 -15.02L-94.32 -17.48L-93.80 -19.94L-93.25 -22.39L-92.63 -24.82L-91.95 -27.24L-91.25 -29.65L-90.57 -32.07L-89.98 -34.54L-89.53 -37.08L-89.24 -39.73L-89.13 -42.51L-89.13 -45.42L-89.19 -48.43L-89.19 -51.49L-89.02 -54.55L-88.56 -57.51L-87.73 -60.29L-86.46 -62.81L-84.73 -65.02L-82.59 -66.88L-80.09 -68.40L-77.33 -69.63L-74.43 -70.63L-71.50 -71.50L-68.63 -72.32L-65.88 -73.17L-63.30 -74.12L-60.89 -75.19L-58.62 -76.39L-56.45 -77.70L-54.33 -79.06L-52.23 -80.43L-50.11 -81.77L-47.95 -83.05L-45.76 -84.28L-43.56 -85.49L-41.37 -86.72L-39.20 -88.05L-37.08 -89.53L-35.01 -91.20L-32.96 -93.08L-30.91 -95.14L-28.82 -97.31L-26.65 -99.48L-24.37 -101.52L-21.95 -103.29L-19.40 -104.67L-16.72 -105.55L-13.94 -105.89L-11.11 -105.69L-8.26 -105.00L-5.45 -103.92L-2.69 -102.58L-0.00 -101.11L2.61 -99.66L5.15 -98.32L7.65 -97.17L10.11 -96.22L12.57 -95.47L15.02 -94.85L17.48 -94.32L19.94 -93.80L22.39 -93.25L24.82 -92.63L27.24 -91.95L29.65 -91.25L32.07 -90.57L34.54 -89.98L37.08 -89.53L39.73 -89.24L42.51 -89.13L45.42 -89.13L48.43 -89.19L51.49 -89.19L54.55 -89.02L57.51 -88.56L60.29 -87.73L62.81 -86.46L65.02 -84.73L66.88 -82.59L68.40 -80.09L69.63 -77.33L70.63 -74.43L71.50 -71.50L72.32 -68.63L73.17 -65.88L74.12 -63.30L75.19 -60.89L76.39 -58.62L77.70 -56.45L79.06 -54.33L80.43 -52.23L81.77 -50.11L83.05 -47.95L84.28 -45.76L85.49 -43.56L86.72 -41.37L88.05 -39.20L89.53 -37.08L91.20 -35.01L93.08 -32.96L95.14 -30.91L97.31 -28.82L99.48 -26.65L101.52 -24.37L103.29 -21.95L104.67 -19.40L105.55 -16.72L105.89 -13.94L105.69 -11.11L105.00 -8.26L103.92 -5.45L102.58 -2.69Z"/></svg>
+      <svg class="iso" viewBox="0 0 503 539" aria-hidden="true" focusable="false"><g class="half l"><path d="M31.8 537.4C10.8 533.4 -2.4 514.7 0.9 494.0C3.6 477.1 14.9 463.9 51.0 435.0C82.8 409.6 92.7 398.6 94.9 386.3C98.0 368.8 90.7 359.0 53.5 331.0C21.5 307.0 13.0 295.0 13.6 275.3C14.3 256.7 22.7 246.1 60.0 216.7C94.4 189.5 102.4 179.8 101.9 165.2C101.4 149.2 92.5 137.8 56.5 106.7C31.4 85.0 16.2 70.1 10.7 61.7C-5.1 37.9 3.3 11.9 29.3 3.5C39.1 0.4 44.3 0.4 54.6 3.5C68.6 7.8 75.5 14.1 91.5 37.5C114.2 70.8 129.6 87.0 161.2 111.2C185.6 129.7 192.5 138.6 195.8 155.2C197.2 162.4 197.2 163.7 195.7 170.8C191.4 190.9 183.5 199.4 144.5 226.6C88.7 265.4 88.8 280.7 145.0 324.0C178.5 349.8 188.6 362.2 189.4 378.5C190.3 396.9 185.0 406.0 163.0 424.0C138.2 444.4 123.8 459.9 97.8 494.5C81.1 516.7 69.6 529.1 62.3 532.9C52.9 537.6 41.5 539.3 31.8 537.4Z"/></g><g class="half r"><path d="M450.3 537.6C435.7 533.9 427.3 526.2 410.4 501.0C389.7 470.0 372.5 451.9 341.4 428.3C313.6 407.3 306.6 397.0 306.6 377.0C306.5 353.7 315.5 343.0 362.9 310.0C413.9 274.5 412.9 258.0 357.4 215.2C323.3 189.0 314.4 177.8 313.5 160.5C312.7 143.6 318.8 133.1 339.0 116.7C363.9 96.6 382.9 75.7 410.9 37.4C423.3 20.5 434.7 9.0 442.9 5.1C477.2 -11.1 511.7 15.9 501.2 50.7C496.4 66.5 485.8 78.0 449.5 107.0C417.2 132.8 408.6 143.7 408.6 159.0C408.5 173.6 416.5 183.2 449.5 207.9C474.8 226.9 487.7 240.1 488.5 247.8C488.6 248.8 489.3 250.9 490.0 252.5C490.7 254.4 491.0 258.7 490.8 264.2C490.0 280.5 480.1 294.3 454.0 315.0C425.2 337.9 419.6 342.7 414.1 348.7C399.9 364.1 398.4 378.4 409.1 395.0C414.1 402.9 429.5 418.2 449.0 435.0C480.7 462.2 495.4 478.6 499.4 491.4C508.1 519.1 480.3 545.2 450.3 537.6Z"/></g></svg>
+    </button>
+    <h1 class="word"><span class="sr-only">XUMB Studio</span><svg viewBox="0 0 909 218" aria-hidden="true" focusable="false"><path style="--i:0" d="M3.1 209.4C-1.2 205.8 -1.3 198.4 2.8 192.3C6.2 187.2 15.7 175.6 23.2 167.4C32.6 157.1 32.9 156.0 28.4 148.6C23.5 140.6 18.5 134.0 11.5 126.0C-4.3 108.0 -3.5 104.8 24.6 73.9C34.0 63.5 34.2 62.7 28.4 53.3C25.7 49.0 20.0 41.4 15.8 36.3C4.3 22.7 3.0 20.5 3.0 14.9C3.0 7.9 6.7 3.9 13.8 3.2C22.1 2.4 23.8 3.7 35.1 19.2C42.0 28.6 48.4 35.9 54.6 41.6C65.2 51.3 66.4 53.8 65.8 64.0C65.4 72.1 64.5 73.4 54.8 79.6C48.7 83.6 34.8 98.9 31.1 105.9C29.6 108.6 44.3 127.6 53.8 135.3C62.5 142.4 64.2 145.3 64.8 154.5C65.3 163.4 63.4 166.5 53.4 173.1C46.5 177.7 37.8 187.4 29.3 200.1C23.3 208.9 18.8 212.0 12.1 212.0C7.2 212.0 5.6 211.6 3.1 209.4Z" fill-rule="evenodd"/><path style="--i:1" d="M156.9 209.7C153.7 207.5 152.4 206.1 142.9 192.9C135.4 182.6 129.3 176.3 123.0 172.5C114.1 167.1 113.0 165.3 113.0 155.8C113.0 146.1 114.6 142.2 120.3 138.0C126.6 133.4 133.8 126.2 137.2 121.1C139.0 118.6 141.9 114.6 143.8 112.2C148.0 107.1 148.0 107.2 138.0 94.8C130.8 85.8 127.2 82.5 119.5 77.6C108.0 70.4 107.8 54.7 119.1 45.0C128.7 36.8 133.4 31.6 142.5 19.1C153.5 4.0 154.7 3.0 161.6 3.0C169.8 3.0 174.0 7.0 174.0 15.0C174.0 21.5 174.7 20.4 158.5 40.2C155.2 44.2 150.5 50.8 148.1 54.8L143.8 62.0L147.0 67.0C148.8 69.7 150.6 72.0 151.1 72.0C151.9 72.0 161.3 83.2 171.8 96.7C175.5 101.6 176.0 102.8 176.0 107.4C176.0 113.5 174.5 116.1 164.4 127.7C156.3 137.0 146.0 152.3 146.0 155.0C146.0 157.2 151.5 166.0 152.9 166.0C153.3 166.0 156.1 169.0 159.1 172.8C162.1 176.5 166.9 182.4 169.9 185.9C179.0 196.8 180.3 202.9 174.6 208.6C170.2 213.0 162.5 213.5 156.9 209.7Z" fill-rule="evenodd"/><path style="--i:2" d="M328.0 212.3C322.9 211.3 303.4 203.6 299.5 200.9C297.3 199.4 291.4 194.2 286.5 189.4C273.4 176.6 267.4 163.9 265.1 144.3C261.6 115.5 261.2 27.9 264.5 17.5C269.2 2.5 282.9 0.5 288.1 14.0C289.1 16.7 289.5 28.6 289.6 67.9C289.9 134.5 291.4 150.3 299.0 165.6C308.4 184.8 324.2 192.6 348.0 189.9C382.3 186.0 395.4 171.6 398.9 133.5C401.7 103.6 402.1 96.2 401.1 85.5C399.7 69.2 402.0 12.6 404.2 8.4C408.6 0.3 421.2 1.6 425.1 10.6C426.9 14.5 427.0 18.2 427.2 59.7C427.4 122.2 427.2 129.1 425.0 138.5C424.0 142.9 422.9 148.8 422.5 151.5C420.4 167.4 418.2 173.0 409.3 184.7C398.0 199.6 382.3 208.1 360.0 211.5C351.1 212.9 333.6 213.3 328.0 212.3Z" fill-rule="evenodd"/><path style="--i:3" d="M513.9 217.0C503.2 214.0 499.7 203.1 502.9 182.8C503.8 177.8 503.7 172.2 502.5 159.3C501.4 145.9 501.3 138.9 502.1 124.5C502.7 114.6 503.3 89.9 503.5 69.5C503.8 29.7 504.8 15.9 507.8 10.2C511.0 3.8 521.0 0.2 527.5 3.2C532.7 5.6 546.1 30.5 565.0 73.2C572.9 91.2 577.5 98.6 582.1 101.1C585.7 103.0 595.7 91.4 602.3 77.8C631.6 17.4 631.6 17.4 638.9 9.7C650.8 -2.9 671.2 -2.3 676.7 10.9C678.4 14.7 678.0 38.5 676.0 55.0C674.3 68.9 674.8 161.7 676.6 176.4C678.8 194.8 678.3 206.0 675.0 209.5C665.1 220.1 652.5 214.6 648.9 198.1C648.1 194.1 648.1 190.0 648.9 182.1C650.7 164.1 651.5 52.9 649.7 50.6C647.7 47.9 645.0 50.8 642.0 58.6C639.2 66.3 632.7 78.1 627.7 84.9C625.5 87.8 622.0 94.2 620.0 99.0C617.9 103.9 614.0 111.1 611.3 115.2C608.5 119.2 604.7 125.1 602.7 128.2C596.2 138.3 585.5 143.4 578.3 139.7C572.2 136.5 565.1 127.2 559.2 114.6C538.8 71.3 535.6 67.6 529.5 79.6C526.4 85.7 526.7 163.2 529.9 182.4C532.3 196.4 532.1 201.8 528.9 208.7C526.0 214.8 519.4 218.5 513.9 217.0Z" fill-rule="evenodd"/><path style="--i:4" d="M768.9 210.9C764.5 209.8 761.2 207.0 759.7 203.2C758.0 198.9 758.1 151.5 759.8 144.7C760.4 142.4 760.5 138.3 759.9 134.2C758.7 124.9 758.8 71.5 760.0 55.0C760.6 47.6 761.4 35.8 761.9 28.9C762.9 13.7 764.9 8.2 770.3 5.7C777.2 2.4 842.4 3.8 858.9 7.6C877.9 11.9 893.1 25.3 902.1 45.5C906.9 56.3 904.4 75.5 896.3 88.5C894.3 91.8 891.2 97.1 889.4 100.4L886.3 106.2L892.1 114.4C909.2 138.2 913.2 163.1 903.2 183.9C899.7 191.2 889.2 201.8 881.9 205.4C869.4 211.5 869.7 211.4 818.5 211.5C792.6 211.6 770.3 211.3 768.9 210.9ZM844.6 189.5C865.0 188.2 879.3 174.2 879.4 155.6C879.5 141.3 873.0 131.6 858.7 124.9C841.6 116.9 798.7 115.4 789.5 122.5C787.6 124.0 787.5 125.4 787.3 155.2C787.1 195.1 784.0 191.2 814.7 190.5C827.2 190.2 840.7 189.8 844.6 189.5ZM830.0 97.5C856.0 94.9 865.6 90.2 872.5 76.6C876.3 69.1 876.5 68.3 876.5 59.6C876.5 50.9 876.3 50.2 873.2 45.2C864.1 31.1 846.6 25.5 813.8 26.2C797.0 26.5 797.0 26.5 793.5 30.1C789.1 34.5 788.0 40.1 789.2 53.5C789.6 58.5 789.7 67.5 789.3 73.6C788.0 97.8 793.8 101.2 830.0 97.5Z" fill-rule="evenodd"/></svg></h1>
+    <p class="studio" aria-hidden="true">STUDIO</p>
+  </div>
+</header>
+
+<main>
+  <section class="about wrap">
+    <div class="grid">
+      <p class="lead">XUMB es un estudio indie de diseño y animación 2D/3D, motion design y arte digital.</p>
+      <p class="body">Trabaja con arte y tecnología para publicidad, industria musical, cine, moda y TV: videos musicales, comerciales, films, eventos en vivo, experiencias inmersivas, pantallas urbanas y redes sociales. Nació en 2023 creando efectos de realidad aumentada para marcas como ESPN, Pepsi, NFL y Nestlé; hoy se enfoca en 3D, motion graphics y dirección de arte digital.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="row grid" aria-labelledby="trabajos">
+      <h2 class="label" id="trabajos">Últimos trabajos</h2>
+      <ul class="content works">
+        <li>
+          <a href="https://www.instagram.com/p/DdZ-toHnOKk/?img_index=2" target="_blank" rel="noopener noreferrer">
+            <span class="name">Duetti</span>
+            <span class="where">Ver en Instagram</span>
+            <span class="desc">Motion graphics para un billboard electrónico en el metro de São Paulo.</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/reel/Dd9PVjRhJRx/" target="_blank" rel="noopener noreferrer">
+            <span class="name">WNBA</span>
+            <span class="where">Ver en Instagram</span>
+            <span class="desc">Escena 3D para promocionar el stand de la WNBA en ComplexCon.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="row grid" aria-labelledby="contacto">
+      <h2 class="label" id="contacto">Contacto</h2>
+      <div class="content">
+        <div class="contact-item">
+          <small>Email</small>
+          <a class="big" href="mailto:martindiez@xumb.studio">martindiez@xumb.studio</a>
+        </div>
+        <div class="contact-item">
+          <small>Instagram</small>
+          <a class="big" href="https://www.instagram.com/xumb.studio/" target="_blank" rel="noopener noreferrer">@xumb.studio</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 XUMB Studio</div>
+</footer>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const hero = document.querySelector('.hero');
+  const stage = document.querySelector('.stage');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  // Paleta en exploración: amarillo actual, naranja, verde y azul semifluorescentes.
+  const palette = ['#E9AD35', '#FF5A1F', '#35F06B', '#4F6BFF'];
+  let i = 0, timer;
+
+  const buzz = () => {
+    if (reduce.matches) return;
+    stage.classList.remove('buzz');
+    void stage.offsetWidth;
+    stage.classList.add('buzz');
+    clearTimeout(timer);
+    timer = setTimeout(() => stage.classList.remove('buzz'), 650);
+  };
+
+  stage.addEventListener('click', () => {
+    i = (i + 1) % palette.length;
+    root.style.setProperty('--accent', palette[i]);
+    buzz();
+  });
+  stage.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') buzz(); });
+
+  // El isotipo sigue al cursor muy levemente.
+  hero.addEventListener('pointermove', e => {
+    if (reduce.matches || e.pointerType !== 'mouse') return;
+    const r = hero.getBoundingClientRect();
+    stage.style.setProperty('--nx', ((e.clientX - r.left) / r.width * 2 - 1).toFixed(3));
+    stage.style.setProperty('--ny', ((e.clientY - r.top) / r.height * 2 - 1).toFixed(3));
+  });
+  hero.addEventListener('pointerleave', () => {
+    stage.style.setProperty('--nx', 0);
+    stage.style.setProperty('--ny', 0);
+  });
+})();
+</script>
+</body>
+</html>
